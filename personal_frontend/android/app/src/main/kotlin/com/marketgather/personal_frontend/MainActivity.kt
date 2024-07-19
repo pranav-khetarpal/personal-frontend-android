@@ -1,4 +1,4 @@
-package com.example.personal_frontend
+package com.marketgather.personal_frontend
 
 import io.flutter.embedding.android.FlutterActivity
 

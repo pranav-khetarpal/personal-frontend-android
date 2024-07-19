@@ -133,102 +133,105 @@ class SettingsPage extends StatelessWidget {
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(25.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              // logout button
-              MySmallButton(
-                text: "Logout", 
-                onTap: () => logout(context),
-              ),
-
-              const SizedBox(height: 10,),
-          
-              // Change Email button
-              MySmallButton(
-                text: "Change Email", 
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => ChangeEmailPage()),
-                  );
-                },
-              ),
-          
-              const SizedBox(height: 10,),
-          
-              // Change Password Button
-              MySmallButton(
-                text: "Change Password", 
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => ChangePasswordPage()),
-                  );
-                },
-              ),
-
-              const SizedBox(height: 10,),
-          
-              // Delete Account button
-              MySmallButton(
-                text: "Delete Account", 
-                onTap: () => showDeleteAccountDialog(context),
-              ),
-
-              const SizedBox(height: 10,),
-
-              MySmallButton(
-                text: "Privacy Policy", 
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const PrivacyPolicyPage()),
-                  );
-                },
-              ),
-
-              const SizedBox(height: 10,),
-
-              MySmallButton(
-                text: "Terms and Conditions for Website", 
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const TermsAndConditionsWeb()),
-                  );
-                },
-              ),
-
-              const SizedBox(height: 10,),
-
-              MySmallButton(
-                text: "Terms and Conditions for App", 
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const TermsAndConditionsApp()),
-                  );
-                },
-              ),
-
-              const SizedBox(height: 10,),
-
-              MySmallButton(
-                text: "Cookies Policy for Website", 
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const CookiesPolicyPage()),
-                  );
-                },
-              ),
-
-              const SizedBox(height: 10,),
-
-              MySmallButton(
-                text: "End User Liscence Agreement", 
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const EndUserLiscenceAgreementPage()),
-                  );
-                },
-              ),
-            ],
+          child: SingleChildScrollView(
+            physics: const AlwaysScrollableScrollPhysics(),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // logout button
+                MySmallButton(
+                  text: "Logout", 
+                  onTap: () => logout(context),
+                ),
+            
+                const SizedBox(height: 10,),
+            
+                // Change Email button
+                MySmallButton(
+                  text: "Change Email", 
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => ChangeEmailPage()),
+                    );
+                  },
+                ),
+            
+                const SizedBox(height: 10,),
+            
+                // Change Password Button
+                MySmallButton(
+                  text: "Change Password", 
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => ChangePasswordPage()),
+                    );
+                  },
+                ),
+            
+                const SizedBox(height: 10,),
+            
+                // Delete Account button
+                MySmallButton(
+                  text: "Delete Account", 
+                  onTap: () => showDeleteAccountDialog(context),
+                ),
+            
+                const SizedBox(height: 10,),
+            
+                MySmallButton(
+                  text: "Privacy Policy", 
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => const PrivacyPolicyPage()),
+                    );
+                  },
+                ),
+            
+                const SizedBox(height: 10,),
+            
+                MySmallButton(
+                  text: "Terms and Conditions for Website", 
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => const TermsAndConditionsWeb()),
+                    );
+                  },
+                ),
+            
+                const SizedBox(height: 10,),
+            
+                MySmallButton(
+                  text: "Terms and Conditions for App", 
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => const TermsAndConditionsApp()),
+                    );
+                  },
+                ),
+            
+                const SizedBox(height: 10,),
+            
+                MySmallButton(
+                  text: "Cookies Policy for Website", 
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => const CookiesPolicyPage()),
+                    );
+                  },
+                ),
+            
+                const SizedBox(height: 10,),
+            
+                MySmallButton(
+                  text: "End User Liscence Agreement", 
+                  onTap: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => const EndUserLiscenceAgreementPage()),
+                    );
+                  },
+                ),
+              ],
+            ),
           ),
         ),
       ),
